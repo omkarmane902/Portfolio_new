@@ -1,0 +1,5 @@
+/* src/Pages/Schema/Schema.css */
+.schema-container {
+  display: none;
+  /* This component is invisible - it only adds meta tags to the head */
+}
