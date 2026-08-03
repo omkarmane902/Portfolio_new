@@ -1,7 +1,7 @@
 // Projects.jsx - Modern Projects Section
 import { motion } from "framer-motion";
 import { useState } from "react";
-import portfolioImage from "../../Assets/portfolio.png"; // Placeholder image
+import portfolioImage from "../../assets/portfolio.png"; // Placeholder image
 import {
   FaGithub,
   FaExternalLinkAlt,
