@@ -1,4 +1,4 @@
-import profile from "../../Assets/omkar.png";
+import profile from "../../assets/omkar.png";
 import { motion } from "framer-motion";
 import {
   FaMapMarkerAlt,
