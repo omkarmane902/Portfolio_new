@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://omkar-mane-portfolio.netlify.app/sitemap.xml
