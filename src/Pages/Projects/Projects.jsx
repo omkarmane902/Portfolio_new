@@ -53,7 +53,7 @@ const Projects = () => {
       tech: ["React", "Tailwind CSS", "Framer Motion"],
       icons: [FaReact, SiTailwindcss, FaCode],
       github: "https://github.com",
-      live: "https://example.com",
+      live: "https://omkar-mane-portfolio.netlify.app/",
       featured: true,
     },
 
