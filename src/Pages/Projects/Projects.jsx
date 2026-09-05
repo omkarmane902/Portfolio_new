@@ -1,7 +1,8 @@
 // Projects.jsx - Modern Projects Section
 import { motion } from "framer-motion";
 import { useState } from "react";
-import portfolioImage from "../../assets/portfolio.png"; // Placeholder image
+import portfolioImage from "../../assets/portfolio.png"; 
+import searchfilterImage from "../../assets/search_filter.png";
 import {
   FaGithub,
   FaExternalLinkAlt,
@@ -9,6 +10,7 @@ import {
   FaNodeJs,
   FaDatabase,
   FaCode,
+  FaSearch,
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -94,6 +96,19 @@ const Projects = () => {
       live: "https://example.com",
       featured: false,
     },
+    // New React Search Filter Project
+    {
+      id: 7,
+      title: "React Search Filter",
+      description: "Interactive search filter application with real-time filtering, category sorting, and smooth animations.",
+      image: <img src={searchfilterImage} alt="Search Filter" />,
+      category: "smallfeatures",
+      tech: ["React", "CSS3", "JavaScript", "Hooks"],
+      icons: [FaReact, SiJavascript, FaSearch, FaCode],
+      github: "https://github.com/omkarmane902/React/tree/main/Search_Filter",
+      live: "https://omkar-react-filter-2026.netlify.app/",
+      featured: false,
+    },
   ];
 
   const categories = [
@@ -101,6 +116,7 @@ const Projects = () => {
     { id: "frontend", label: "Frontend" },
     { id: "backend", label: "Backend" },
     { id: "fullstack", label: "Full Stack" },
+    { id: "smallfeatures", label: "Small Features" },
   ];
 
   const filteredProjects = filter === "all" 
@@ -239,6 +255,12 @@ const ProjectCard = ({ project, index, featured }) => {
             Featured
           </span>
         )}
+        {/* Small Features Badge */}
+        {project.category === "smallfeatures" && (
+          <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-gradient-to-r from-emerald-500 to-teal-400 text-white text-xs font-medium shadow-lg">
+            ✨ Mini Project
+          </span>
+        )}
       </div>
 
       {/* Content */}
@@ -275,7 +297,7 @@ const ProjectCard = ({ project, index, featured }) => {
         </div>
 
         {/* Links */}
-        <div className="mt-5 flex gap-3">
+        <div className="mt-5 flex gap-3 flex-wrap">
           <a
             href={project.github}
             target="_blank"
