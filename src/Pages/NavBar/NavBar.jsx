@@ -9,13 +9,13 @@ import {
   FaCode,
   FaProjectDiagram,
   FaBriefcase,
-  FaGraduationCap,
+  FaHome,
   FaEnvelope,
   FaCertificate,
 } from "react-icons/fa";
 
 const navLinks = [
-  { name: "Home", icon: <FaUser />, id: "home" },
+  { name: "Home", icon: <FaHome />, id: "home" },
   { name: "About", icon: <FaUser />, id: "about" },
   { name: "Skill", icon: <FaCode />, id: "skills" },
   { name: "Project", icon: <FaProjectDiagram />, id: "projects" },
