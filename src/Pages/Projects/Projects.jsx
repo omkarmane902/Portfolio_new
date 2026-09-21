@@ -1,5 +1,7 @@
 import { useState } from "react";
 import portfolioImage from "../../assets/portfolio.png";
+import search from "../../assets/search_filter.png"
+import ShortURL from '../../assets/UrlShortner.png'
 
 import {
   FaGithub,
@@ -118,7 +120,7 @@ const Projects = () => {
       title: "React Search Filter",
       description:
         "Interactive search filter application with real-time filtering, category sorting, and smooth animations.",
-      image: "🔎",
+      image: <img src={search} alt="search" />,
       category: "smallfeatures",
       tech: ["React", "CSS3", "JavaScript", "Hooks"],
       icons: [FaReact, SiJavascript, FaSearch, FaCode],
@@ -126,8 +128,20 @@ const Projects = () => {
       live: "https://omkar-react-filter-2026.netlify.app/",
       featured: false,
     },
+    {
+      id: 8,
+      title: "URL Shortener application",
+      description:
+        "Full-stack URL Shortener application with instant short URL generation, URL redirection, click tracking, and real-time analytics.",
+      image: <img src={ShortURL} alt="search" />,
+      category: "fullstack",
+      tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      icons: [FaReact, FaNodeJs, SiExpress, SiMongodb, SiTailwindcss],
+      github:"https://github.com/omkarmane902/URL-shortener-project",
+      live:"https://url-shortener-project-p3fo.vercel.app/",
+      featured: true,
+    },
   ];
-
   const categories = [
     { id: "all", label: "All Projects" },
     { id: "frontend", label: "Frontend" },
